@@ -10,15 +10,15 @@ function CurrentConversion() {
   const [amount, setAmount] = useState(0);
   const [isChange, setChange] = useState(false);
 
-  const http1 =
-    "https://v6.exchangerate-api.com/v6/232456a16289a75a228cd080/latest/USD";
+  // const http1 =
+  //   "https://v6.exchangerate-api.com/v6/232456a16289a75a228cd080/latest/USD";
 
   useEffect(() => {
     setLoading(true);
 
     const fetchData = async () => {
       try {
-        const response = await axios.get<IType.Data>(http1);
+        const response = await axios.get<IType.Data>("http1");
         setConversion(response.data);
       } catch (error: any) {
         notification.error({
