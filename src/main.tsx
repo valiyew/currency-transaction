@@ -1,10 +1,21 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { ConfigProvider } from "antd";
+import "antd/dist/reset.css";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import { LayoutComponent } from "./components";
+
+import "./main.css";
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+
+root.render(
+  <ConfigProvider>
+    <BrowserRouter>
+      <LayoutComponent />
+    </BrowserRouter>
+  </ConfigProvider>
+);
