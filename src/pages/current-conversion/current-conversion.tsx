@@ -13,9 +13,6 @@ function CurrentConversion() {
   const http1 =
     "https://v6.exchangerate-api.com/v6/232456a16289a75a228cd080/latest/USD";
 
-  const http2 =
-    "https://api.exchangeratesapi.io/v1/latest?access_key=168308bf666216fb597808a185144dab&symbols=UZS";
-
   useEffect(() => {
     setLoading(true);
 
