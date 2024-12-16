@@ -46,6 +46,7 @@ function CurrentConversion() {
 
         try {
           const response = await axios.get(http1);
+          console.log(response);
         } catch (error: any) {
           notification.error({
             message: "Error",
