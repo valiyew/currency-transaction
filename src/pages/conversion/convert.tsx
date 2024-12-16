@@ -30,7 +30,7 @@ function Convert() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(http1);
+        const response = await axios.get('http1');
         setCurrency(response.data);
       } catch (error: any) {
         console.log(error);
@@ -44,7 +44,7 @@ function Convert() {
     if (isCurrency && fromCurrency && toCurrency) {
       const fetchData = async () => {
         try {
-          const response = await axios.get(http2);
+          const response = await axios.get('http2');
 
           setResult(response.data.conversion_result);
         } catch (error: any) {
