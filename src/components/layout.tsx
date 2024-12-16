@@ -35,11 +35,7 @@ const LayoutComponent = () => {
       icon: <RetweetOutlined />,
       label: "Convert",
     },
-    {
-      key: "4",
-      icon: <ScheduleOutlined />,
-      label: "Symbols",
-    },
+
   ];
 
   const setNavigation = (e: any) => {
